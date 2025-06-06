@@ -63,8 +63,12 @@ let itensRemovido = inventarioBeta.pop()
 
 //Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
 
+inventarioAlpha.push(['Óculos de raio-x', 'Júpiter' , 11600], ['Relógio adaptável', 'Terra' , 9600], ['tapete voador', 'Lua' , 11300])
+
 
 //Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
+
+inventarioBeta.push(['capacete de oxigênio', 'Kepler' , 8600], ['Colar controlador ', 'Kepler' , 3600])
 
 
 //Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
@@ -148,4 +152,6 @@ let itensRemovido = inventarioBeta.pop()
 console.log(`Elementos duplicados: ${itensDuplicados}`);
 
 console.log(`Item removido do inventário Beta: ${itensRemovido}`);
+console.log(`Item adicionado ao inventário Alpha: ${inventarioAlpha}`);
+console.log(`Item adicionado ao inventário Alpha: ${inventarioBeta}`)
 

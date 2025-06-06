@@ -140,6 +140,9 @@ console.log("\n5 primeiros itens do inventário Beta para inspeção:\n" , itemR
 
 //Separe os 10 últimos itens do inventário Alpha para estudo temporal.
 
+let itemRemovido10Final = inventarioAlpha.splice(-10)
+console.log("\n10 últimos itens do inventário Beta para estudo temporal:\n" , itemRemovido10Final);
+
 
 //O quinto item da Alpha foi substituído por uma versão mais moderna. Atualize.
 

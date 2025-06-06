@@ -55,11 +55,9 @@ let inventarioAlpha = [
     ["Terminal de Dobra", "Alpha Centauri", 10500]
   ];
   
-
-// Um item duplicado foi detectado no final do inventário Alpha. Remova a cópia.
-
-
-
+  // Um item duplicado foi detectado no final do inventário Alpha. Remova a cópia.
+let itensDuplicados = inventarioAlpha.pop()
+   
 //Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
 
 
@@ -145,3 +143,7 @@ let inventarioAlpha = [
 
 
 //Conte quantos itens do inventário Beta vieram de planetas do sistema solar interno.
+
+
+console.log(`Elementos duplicados: ${itensDuplicados}`);
+

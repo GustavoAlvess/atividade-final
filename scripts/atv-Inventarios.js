@@ -182,6 +182,9 @@ let valoresAlpha = inventarioAlpha.map((item) => [item[0], item[1], item[2]*moed
 console.log("Inventário Beta com nomes maiúsculos" , valoresAlpha);
 
 //Filtre da Beta apenas os itens que custam mais de 7000 créditos.
+let itensMaior7000 = inventarioBeta.filter((item) => item >= 7000)
+console.log("Itens maior que 7000" , itensMaior7000);
+
 
 
 //Filtre da Alpha todos os itens originários da Terra para despacho diplomático.

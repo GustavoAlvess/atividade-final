@@ -99,27 +99,27 @@ let inventarioAlpha = [
   console.log(`Inventário Beta atualizado: ${inventarioBeta}\n`)
 
 //Verifique se a “Relíquia de Zordon” está presente no inventário Beta.
-
-  if (inventarioBeta.includes("Relíquia de Zordon")) {
-    console.log("Sim, a “Relíquia de Zordon” está no inventário Beta\n");
-    
-  } else{
-    console.log("Não, a “Relíquia de Zordon” não está no inventário Beta\n");
-    
-    
-  }
-
+ nomesItens = inventarioBeta.map((item) => item[0])
+let reliquiaExiste1 = nomesItens.includes("Relíquia de Zordon")
+ if (reliquiaExiste1) {
+  console.log("Sim, Relíquia de Zordon está presente no inventário Beta\n");
+  
+} else {
+  console.log("Não, Relíquia de Zordon está não presente no inventário Beta\n");
+  
+}
 
 //Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha.
+ nomesItens = inventarioAlpha.map((item) => item[0])
+let reliquiaExiste = nomesItens.includes("Nanofibra Luminosa")
+if (reliquiaExiste) {
+  console.log("Sim, Nanofibra Luminosa está presente no inventário Alpha\n");
+  
+} else {
+  console.log("Não, Nanofibra Luminosa está não presente no inventário Alpha\n");
+  
+}
 
-if (inventarioAlpha.includes("Nanofibra Luminosa")) {
-    console.log("Sim, o item “Nanofibra Luminosa” está no inventário Alpha\n");
-    
-  } else{
-    console.log("Não, a “Nanofibra Luminosa” não está no inventário Alpha\n");
-    
-    
-  }
 //Gere uma string com todos os planetas do inventário Alpha, separados por um delimitador.
 
 console.log(`Inventário Alpha atualizado: ${inventarioAlpha.join(" - ")}\n`)
@@ -145,6 +145,9 @@ console.log("\n10 últimos itens do inventário Beta para estudo temporal:\n" , 
 
 
 //O quinto item da Alpha foi substituído por uma versão mais moderna. Atualize.
+
+let item5 = inventarioBeta.splice(4,1, ["Sapato saltitante" , "Vênus", 6250])
+console.log("\n5° item do inventário Beta versão moderna:\n" , item5);
 
 
 //Dois itens no meio do inventário Beta foram contaminados e precisam ser removidos.

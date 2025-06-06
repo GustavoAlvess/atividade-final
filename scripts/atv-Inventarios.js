@@ -159,6 +159,9 @@ console.log(`\nTamanho do inventário beta: ${inventarioBeta.length} itens\n`);
 
 //Unifique os inventários Alpha e Beta em uma única estrutura.
 
+let inventarioAlphaBeta = inventarioAlpha.concat(inventarioBeta)
+console.log(" Inventário Alpha-Beta:" , inventarioAlphaBeta);
+
 
 //Junte os cinco primeiros itens de cada nave em uma nova vitrine de destaques.
 

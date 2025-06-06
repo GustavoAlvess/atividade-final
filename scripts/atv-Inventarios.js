@@ -59,7 +59,7 @@ let inventarioAlpha = [
 let itensDuplicados = inventarioAlpha.pop()
    
 //Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
-
+let itensRemovido = inventarioBeta.pop()
 
 //Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
 
@@ -146,4 +146,6 @@ let itensDuplicados = inventarioAlpha.pop()
 
 
 console.log(`Elementos duplicados: ${itensDuplicados}`);
+
+console.log(`Item removido do inventário Beta: ${itensRemovido}`);
 

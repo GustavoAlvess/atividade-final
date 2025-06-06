@@ -165,6 +165,10 @@ console.log(" Inventário Alpha-Beta:" , inventarioAlphaBeta);
 
 //Junte os cinco primeiros itens de cada nave em uma nova vitrine de destaques.
 
+let cincoPrimeirosAlpha = inventarioAlpha.splice(0,5)
+let cincoPrimeirosBeta = inventarioBeta.splice(0,5)
+console.log("\nVitrine nova com 5 primeiros itens de cada inventário: \n" , cincoPrimeirosAlpha.concat(cincoPrimeirosBeta));
+
 
 //Crie uma versão com os nomes de todos os itens da Beta em letras maiúsculas.
 

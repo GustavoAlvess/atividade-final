@@ -100,6 +100,15 @@ let inventarioAlpha = [
 
 //Verifique se a “Relíquia de Zordon” está presente no inventário Beta.
 
+  if (inventarioBeta.includes("Relíquia de Zordon")) {
+    console.log("Sim, a “Relíquia de Zordon” está no inventário Beta ");
+    
+  } else{
+    console.log("Não, a “Relíquia de Zordon” não está no inventário Beta ");
+    
+    
+  }
+
 
 //Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha.
 

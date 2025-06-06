@@ -151,6 +151,10 @@ console.log("\n5° item do inventário Alpha versão moderna:\n" ,inventarioAlph
 
 
 //Dois itens no meio do inventário Beta foram contaminados e precisam ser removidos.
+console.log(`\nTamanho do inventário beta: ${inventarioBeta.length} itens\n`);
+ let itensMeio = inventarioAlpha.splice(5,2)
+ console.log("Itens do meio removidos:", itensMeio , "\nInventátio beta atualizado:" , inventarioBeta);
+ 
 
 
 //Unifique os inventários Alpha e Beta em uma única estrutura.

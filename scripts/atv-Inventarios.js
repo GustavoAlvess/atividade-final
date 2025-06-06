@@ -86,12 +86,17 @@ let inventarioAlpha = [
   
   inventarioBeta.unshift(['Óculos de raio-x', 'Júpiter' , 11600])
   console.log(`Item ao topo do inventário Beta: ${inventarioBeta}\n`)
-
-//Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
-
-
-//O primeiro item da Beta pertence a um museu e deve ser removido.
-
+  
+  //Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
+  
+  inventarioAlpha.shift()
+  console.log(`Inventário Alpha atualizado: ${inventarioAlpha}\n`)
+  
+  
+  //O primeiro item da Beta pertence a um museu e deve ser removido.
+  
+  inventarioBeta.shift()
+  console.log(`Inventário Beta atualizado: ${inventarioBeta}\n`)
 
 //Verifique se a “Relíquia de Zordon” está presente no inventário Beta.
 

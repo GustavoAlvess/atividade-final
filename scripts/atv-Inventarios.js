@@ -172,9 +172,14 @@ console.log("\nVitrine nova com 5 primeiros itens de cada inventário: \n" , cin
 
 //Crie uma versão com os nomes de todos os itens da Beta em letras maiúsculas.
 
+let nomesMaiusculoBeta = inventarioBeta.map((item) => [item[0].toUpperCase(), item[1], item[2]]);
+console.log("Inventário Beta com nomes maiúsculos" , nomesMaiusculoBeta);
+
 
 //Converta os valores de todos os itens da Alpha para uma moeda interestelar (multiplicação).
-
+let moeda = 5
+let valoresAlpha = inventarioAlpha.map((item) => [item[0], item[1], item[2]*moeda]);
+console.log("Inventário Beta com nomes maiúsculos" , valoresAlpha);
 
 //Filtre da Beta apenas os itens que custam mais de 7000 créditos.
 

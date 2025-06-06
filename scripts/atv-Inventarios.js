@@ -146,8 +146,8 @@ console.log("\n10 últimos itens do inventário Beta para estudo temporal:\n" , 
 
 //O quinto item da Alpha foi substituído por uma versão mais moderna. Atualize.
 
-let item5 = inventarioBeta.splice(4,1, ["Sapato saltitante" , "Vênus", 6250])
-console.log("\n5° item do inventário Beta versão moderna:\n" , item5);
+inventarioAlpha.splice(4,1,["Sapato saltitante" , "Vênus", 6250])
+console.log("\n5° item do inventário Alpha versão moderna:\n" ,inventarioAlpha);
 
 
 //Dois itens no meio do inventário Beta foram contaminados e precisam ser removidos.

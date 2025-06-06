@@ -127,6 +127,10 @@ console.log(`Inventário Alpha atualizado: ${inventarioAlpha.join(" - ")}\n`)
 
 //Crie um texto com os nomes dos 10 primeiros itens da Beta, separados por vírgulas.
 
+let itemRemovido10 = inventarioBeta.splice(0,10).join(' , ')
+console.log("10 primeiros itens do inventário Beta:\n" , itemRemovido10);
+
+
 
 //Gere uma nova lista com os 5 primeiros itens da nave Beta para inspeção.
 

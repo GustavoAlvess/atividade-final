@@ -112,8 +112,17 @@ let inventarioAlpha = [
 
 //Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha.
 
-
+if (inventarioAlpha.includes("Nanofibra Luminosa")) {
+    console.log("Sim, o item “Nanofibra Luminosa” está no inventário Alpha ");
+    
+  } else{
+    console.log("Não, a “Nanofibra Luminosa” não está no inventário Alpha");
+    
+    
+  }
 //Gere uma string com todos os planetas do inventário Alpha, separados por um delimitador.
+
+
 
 
 //Crie um texto com os nomes dos 10 primeiros itens da Beta, separados por vírgulas.

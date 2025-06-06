@@ -80,10 +80,12 @@ let inventarioAlpha = [
   
   inventarioAlpha.unshift(['capacete de oxigênio', 'Kepler' , 8600])
   console.log(`Item ao topo do inventário Alpha: ${inventarioAlpha}\n`)
-
-
-//Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
-
+  
+  
+  //Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
+  
+  inventarioBeta.unshift(['Óculos de raio-x', 'Júpiter' , 11600])
+  console.log(`Item ao topo do inventário Beta: ${inventarioBeta}\n`)
 
 //Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
 

@@ -101,10 +101,10 @@ let inventarioAlpha = [
 //Verifique se a “Relíquia de Zordon” está presente no inventário Beta.
 
   if (inventarioBeta.includes("Relíquia de Zordon")) {
-    console.log("Sim, a “Relíquia de Zordon” está no inventário Beta ");
+    console.log("Sim, a “Relíquia de Zordon” está no inventário Beta\n");
     
   } else{
-    console.log("Não, a “Relíquia de Zordon” não está no inventário Beta ");
+    console.log("Não, a “Relíquia de Zordon” não está no inventário Beta\n");
     
     
   }
@@ -113,16 +113,16 @@ let inventarioAlpha = [
 //Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha.
 
 if (inventarioAlpha.includes("Nanofibra Luminosa")) {
-    console.log("Sim, o item “Nanofibra Luminosa” está no inventário Alpha ");
+    console.log("Sim, o item “Nanofibra Luminosa” está no inventário Alpha\n");
     
   } else{
-    console.log("Não, a “Nanofibra Luminosa” não está no inventário Alpha");
+    console.log("Não, a “Nanofibra Luminosa” não está no inventário Alpha\n");
     
     
   }
 //Gere uma string com todos os planetas do inventário Alpha, separados por um delimitador.
 
-
+console.log(`Inventário Alpha atualizado: ${inventarioAlpha.join(" - ")}\n`)
 
 
 //Crie um texto com os nomes dos 10 primeiros itens da Beta, separados por vírgulas.

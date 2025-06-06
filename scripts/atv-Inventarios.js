@@ -56,22 +56,30 @@ let inventarioAlpha = [
   ];
   
   // Um item duplicado foi detectado no final do inventário Alpha. Remova a cópia.
-let itensDuplicados = inventarioAlpha.pop()
-   
-//Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
-let itensRemovido = inventarioBeta.pop()
-
-//Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
-
-inventarioAlpha.push(['Óculos de raio-x', 'Júpiter' , 11600], ['Relógio adaptável', 'Terra' , 9600], ['tapete voador', 'Lua' , 11300])
-
-
-//Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
-
-inventarioBeta.push(['capacete de oxigênio', 'Kepler' , 8600], ['Colar controlador ', 'Kepler' , 3600])
-
-
-//Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
+  let itensDuplicados = inventarioAlpha.pop()
+  console.log(`Elementos duplicados: ${itensDuplicados}\n`);
+  
+  //Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.  
+  let itensRemovido = inventarioBeta.pop()
+  console.log(`Item removido do inventário Beta: ${itensRemovido}\n`);
+  
+  //Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
+  
+  inventarioAlpha.push(['Óculos de raio-x', 'Júpiter' , 11600], ['Relógio adaptável', 'Terra' , 9600], ['tapete voador', 'Lua' , 11300])
+  console.log(`Item adicionado ao inventário Alpha: ${inventarioAlpha}\n`);
+  
+  
+  
+  //Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
+  
+  inventarioBeta.push(['capacete de oxigênio', 'Kepler' , 8600], ['Colar controlador ', 'Kepler' , 3600])
+  console.log(`Item adicionado ao inventário Beta: ${inventarioBeta}\n`);
+  
+  
+  //Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
+  
+  inventarioAlpha.unshift(['capacete de oxigênio', 'Kepler' , 8600])
+  console.log(`Item ao topo do inventário Alpha: ${inventarioAlpha}\n`)
 
 
 //Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
@@ -149,9 +157,4 @@ inventarioBeta.push(['capacete de oxigênio', 'Kepler' , 8600], ['Colar controla
 //Conte quantos itens do inventário Beta vieram de planetas do sistema solar interno.
 
 
-console.log(`Elementos duplicados: ${itensDuplicados}`);
-
-console.log(`Item removido do inventário Beta: ${itensRemovido}`);
-console.log(`Item adicionado ao inventário Alpha: ${inventarioAlpha}`);
-console.log(`Item adicionado ao inventário Alpha: ${inventarioBeta}`)
 
